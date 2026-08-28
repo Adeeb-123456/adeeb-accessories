@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Adeeb Accessories</title><link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adeeb Accessories — premium watches, jewelry, sunglasses and bracelets.">
+<title>Adeeb Accessories | Premium Everyday Style</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topbar">🚚 FREE SHIPPING ON ORDERS OVER $50 <span>Follow us: &nbsp; f &nbsp; ◎ &nbsp; ♥</span></div>
-<header>
-<a class="logo" href="#"><span>◇</span> Adeeb<small>ACCESSORIES</small></a>
-<button class="menu" aria-label="Open menu">☰</button>
-<nav><a href="#home">HOME</a><a href="#shop">SHOP</a><a href="#categories">CATEGORIES</a><a href="#about">ABOUT US</a><a href="#contact">CONTACT</a></nav>
-<div class="icons"><button>⌕</button><button>♙</button><button id="cartBtn">🛒 <b id="cartCount">0</b></button></div>
+<div class="announcement">FREE SHIPPING ON ORDERS OVER $50 <span>•</span> EASY 30-DAY RETURNS</div>
+
+<header class="header">
+  <a class="brand" href="index.html"><span class="brand-mark">◇</span><span>Adeeb<small>ACCESSORIES</small></span></a>
+  <nav class="desktop-nav">
+    <a class="active" href="index.html">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+    <a class="icon-btn" href="account.html" aria-label="Account">♙</a>
+    <button class="icon-btn cart-trigger" id="cartBtn" aria-label="Cart">🛒<b id="cartCount">0</b></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
 </header>
-<main id="home">
-<section class="hero"><div class="hero-copy"><p class="eyebrow">ELEVATE YOUR STYLE</p><h1>Style That Speaks<br>For You</h1><p>Discover elegant, trendy and premium accessories made to complete every look.</p><a class="btn" href="#shop">SHOP NOW →</a></div><div class="hero-art"><div class="watch">◯<small>Adeeb</small></div><div class="rings">◯ ◯</div><div class="chains">⌁ ⌁</div></div></section>
-<section class="benefits"><div>🚚 <strong>FREE SHIPPING</strong><small>On orders over $50</small></div><div>🛡️ <strong>SECURE PAYMENT</strong><small>100% secure payment</small></div><div>↩️ <strong>EASY RETURNS</strong><small>30 days return policy</small></div><div>♧ <strong>24/7 SUPPORT</strong><small>Dedicated support</small></div></section>
-<section id="categories" class="categories-section"><p class="eyebrow center">SHOP BY CATEGORY</p><h2>Find Your Style</h2><div class="gold-line"></div><div class="categories"><button class="category active" data-category="All">ALL</button><button class="category" data-category="Jewelry">💎 JEWELRY</button><button class="category" data-category="Watches">⌚ WATCHES</button><button class="category" data-category="Sunglasses">🕶️ SUNGLASSES</button><button class="category" data-category="Bags">👜 BAGS</button></div></section>
-<section id="shop" class="products-section"><p class="eyebrow center">OUR FAVORITES</p><h2>Featured Products</h2><div class="gold-line"></div><div class="products" id="products"></div></section>
-<section id="collections" class="offer"><div><p class="eyebrow">WELCOME OFFER</p><h2>Get 20% Off Your First Order</h2><button class="gold-btn" onclick="scrollToShop()">SHOP NOW</button></div><div class="bracelet-art">◉━━◉━━◉</div></section>
-<section id="about" class="about"><p class="eyebrow">ABOUT ADEEB</p><h2>Small Details. Big Style.</h2><p>Adeeb Accessories brings together stylish and elegant accessories for everyday looks and special moments. We believe the right accessory can make every outfit feel uniquely yours.</p></section>
+<div class="mobile-nav" id="mobileNav"><a href="index.html">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+
+<div class="search-bar" id="searchBar"><div class="search-inner"><span>⌕</span><input id="searchInput" placeholder="Search watches, necklaces, bracelets..." autocomplete="off"><button id="searchClose">×</button></div></div>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">ELEVATE YOUR STYLE</p>
+    <h1>Beautiful accessories<br><em>for every you.</em></h1>
+    <p class="hero-text">Thoughtfully selected pieces that add a refined finish to everyday moments.</p>
+    <a class="primary-btn" href="#shop">SHOP COLLECTION <span>→</span></a>
+    <div class="hero-note"><span>✦</span> Curated quality. Timeless design.</div>
+  </div>
+  <div class="hero-image"><img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1100&q=85" alt="Elegant gold watch"></div>
+</section>
+
+<section class="trust-row">
+  <div><span>◇</span><strong>Premium selection</strong><small>Carefully curated</small></div>
+  <div><span>♢</span><strong>Secure checkout</strong><small>Protected payment</small></div>
+  <div><span>↩</span><strong>Easy returns</strong><small>30-day policy</small></div>
+  <div><span>♡</span><strong>Personal support</strong><small>We're here to help</small></div>
+</section>
+
+<section class="section" id="shop">
+  <div class="section-heading"><div><p class="eyebrow">SHOP THE EDIT</p><h2>Featured pieces</h2></div><a class="text-link" href="shop.html">View all products →</a></div>
+  <div class="category-pills"><button class="pill active" data-filter="all">All</button><button class="pill" data-filter="watches">Watches</button><button class="pill" data-filter="jewelry">Jewelry</button><button class="pill" data-filter="sunglasses">Sunglasses</button><button class="pill" data-filter="bracelets">Bracelets</button></div>
+  <div class="product-grid" id="featuredProducts"></div>
+</section>
+
+<section class="editorial" id="collections">
+  <div><p class="eyebrow">THE EVERYDAY EDIT</p><h2>Small details.<br><em>Big impression.</em></h2><p>Discover pieces designed to work together, from understated mornings to special evenings.</p><a class="light-btn" href="shop.html">EXPLORE COLLECTION</a></div>
+  <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1100&q=85" alt="Gold jewelry collection">
+</section>
+
+<section class="about-section" id="about"><p class="eyebrow">ABOUT ADEEB</p><h2>Style should feel personal.</h2><p>Adeeb Accessories brings together modern essentials and elegant statement pieces for people who want their everyday style to feel a little more special.</p></section>
+
+<section class="newsletter"><div><p class="eyebrow">STAY IN THE LOOP</p><h2>New drops, special offers.</h2></div><form id="newsletter"><input type="email" placeholder="Your email address" required><button>SUBSCRIBE →</button></form></section>
 </main>
-<footer id="contact"><div><a class="logo" href="#"><span>◇</span> Adeeb<small>ACCESSORIES</small></a><p>Trendy, stylish and premium accessories made for every occasion.</p></div><div><h3>QUICK LINKS</h3><a href="#home">Home</a><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">About Us</a></div><div><h3>CUSTOMER SERVICE</h3><a href="#">Shipping Policy</a><a href="#">Return Policy</a><a href="#">Privacy Policy</a><a href="#">FAQ</a></div><div><h3>NEWSLETTER</h3><p>Subscribe for special offers and new arrivals.</p><form id="newsletter"><input type="email" placeholder="Enter your email" required><button>SUBSCRIBE</button></form></div><div class="copyright">© 2026 Adeeb Accessories. All Rights Reserved.</div></footer>
-<div class="cart-panel" id="cartPanel"><div class="cart-head"><h2>Your Cart</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="total">Total: $<span id="total">0.00</span></div><button class="checkout" onclick="alert('Demo checkout — connect your payment/order system here.')">CHECKOUT</button></div><div class="overlay" id="overlay"></div><a class="chat" href="https://wa.me/" target="_blank" aria-label="WhatsApp">◔</a><script src="script.js"></script>
-</body></html>
+
+<footer id="contact">
+  <div class="footer-main">
+    <div><a class="brand" href="index.html"><span class="brand-mark">◇</span><span>Adeeb<small>ACCESSORIES</small></span></a><p>Premium accessories for everyday confidence.</p></div>
+    <div><h4>SHOP</h4><a href="shop.html">All Products</a><a href="shop.html?category=watches">Watches</a><a href="shop.html?category=jewelry">Jewelry</a><a href="shop.html?category=bracelets">Bracelets</a></div>
+    <div><h4>HELP</h4><a href="#">Shipping & Delivery</a><a href="#">Returns</a><a href="#">Privacy</a><a href="#">FAQ</a></div>
+    <div><h4>CONTACT</h4><p>Bangladesh</p><p>support@adeebaccessories.com</p><p>+880 1XXX-XXXXXX</p></div>
+  </div>
+  <div class="copyright">© 2026 Adeeb Accessories. All rights reserved.</div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer"><div class="drawer-head"><h2>Your bag</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="drawer-bottom"><div class="subtotal"><span>Subtotal</span><strong>$<span id="cartTotal">0.00</span></strong></div><p>Shipping calculated at checkout.</p><a class="primary-btn full" href="checkout.html">CHECKOUT →</a></div></aside>
+<div class="overlay" id="overlay"></div>
+<a class="whatsapp" href="https://wa.me/" target="_blank" aria-label="WhatsApp">◔</a>
+<script src="script.js"></script>
+</body>
+</html>
