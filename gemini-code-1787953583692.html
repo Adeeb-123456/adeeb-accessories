@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adeeb Accessories | Premium Collection</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
+            --subtext: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 30px;
+            background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--subtext);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent-color);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: #0f172a;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--subtext);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ADEEB ACCESSORIES</h1>
+        <p>Elevate Your Everyday Style</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80" alt="Luxury Sunglasses" class="product-image">
+                <h3>Luxury Sunglasses</h3>
+                <div class="price">$45.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80" alt="Premium Wallets" class="product-image">
+                <h3>Premium Wallets</h3>
+                <div class="price">$35.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1611591475140-4388663e3604?auto=format&fit=crop&w=600&q=80" alt="Bracelets" class="product-image">
+                <h3>Bracelets</h3>
+                <div class="price">$25.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=600&q=80" alt="Luxury Watches" class="product-image">
+                <h3>Luxury Watches</h3>
+                <div class="price">$120.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Rings" class="product-image">
+                <h3>Rings</h3>
+                <div class="price">$30.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Crossbody Bags" class="product-image">
+                <h3>Crossbody Bags</h3>
+                <div class="price">$65.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Belts" class="product-image">
+                <h3>Belts</h3>
+                <div class="price">$40.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=600&q=80" alt="Premium Caps" class="product-image">
+                <h3>Premium Caps</h3>
+                <div class="price">$28.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80" alt="Perfume / Fragrance" class="product-image">
+                <h3>Perfume / Fragrance</h3>
+                <div class="price">$75.00</div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adeeb Accessories. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
